@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listen Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="heading-part">
+        <div class="heading-image">
+          <img src="./Images/music-photo1.png" />
+        </div>
+        <div class="heading-content">
+          <h2>PLAY THE MUSIC YOU LOVE</h2>
+
+          <div class="some-space"></div>
+
+          <div id="bangla_page" class="card">
+            <p>Bengali Music</p>
+          </div>
+
+          <div class="some-space"></div>
+
+          <div id="english_page" class="card">
+            <p>English Music</p>
+          </div>
+
+          <div class="some-space"></div>
+
+          <div id="hindi_page" class="card">
+            <p>Hindi Music</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    
+
+    <script>
+      document
+        .getElementById("bangla_page")
+        .addEventListener("click", function () {
+          location.href = "./bengali.html";
+        });
+    </script>
+  </body>
+</html>

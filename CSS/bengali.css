@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Courgette", cursive;
+}
+
+body {
+  background: url("../Images/785502.gif");
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 20px 0;
+  color: #f2f2f2;
+}
+
+.main-content {
+  display: flex;
+}
+.main-content .animation-part {
+  flex: 50%;
+}
+
+.animation-part img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-content .feature-part {
+  flex: 50%;
+}
+
+.feature-part .card {
+  display: block;
+  margin: 30px auto 25px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+  padding-bottom: 20px;
+}
+
+.card p {
+  text-align: center;
+  padding: 10px 12px;
+  color: #f2f2f2;
+  margin: 15px 5px;
+  
+}
+
+.card .emotion-block {
+  display: flex;
+}
+
+.emotion-block .left-side {
+  flex: 33.33%;
+}
+
+.emotion-block .middle-side {
+  flex: 33.33%;
+}
+.emotion-block .right-side {
+  flex: 33.33%;
+}
+
+.left-side img {
+  width: 40px;
+  display: block;
+  margin: 20px auto 5px auto;
+  cursor: pointer;
+}
+.middle-side img {
+  width: 40px;
+  display: block;
+  cursor: pointer;
+  margin: 20px auto 5px auto;
+}
+.right-side img {
+  width: 40px;
+  display: block;
+  margin: 20px auto 5px auto;
+  cursor: pointer;
+}
+
+.left-side p {
+  color: #f2f2f2;
+}
+.middle-side p {
+  color: #f2f2f2;
+}
+.right-side p {
+  color: #f2f2f2;
+}
+
+.functional-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.functional-btn i {
+  color: #6e5e5e;
+  width: 50px;
+  cursor: pointer;
+}
+
+h3 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  padding: 2px;
+
+  font-size: 25px;
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+h3::before,
+h3::after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: "\a0";
+  background-color: #f2f2f2;
+}
+
+h3::before {
+  margin-left: -50%;
+  text-align: right;
+}
+.functional-btn .fa {
+  font-size: 35px;
+}

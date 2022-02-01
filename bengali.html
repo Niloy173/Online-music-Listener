@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bengali Vibes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./CSS/bengali.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h2>Bengali Music</h2>
+    </div>
+
+    <div class="main-content">
+      <div class="animation-part">
+        <!-- <img src="./Images/e658e8998f13909eae69aa262214f667.gif" /> -->
+      </div>
+
+      <div class="feature-part">
+        <div class="card">
+          <p style="font-size: 20px">Click Any emoji and feel the music</p>
+
+          <div class="emotion-block">
+            <div class="left-side">
+              <img src="./Images/happypic.png" alt="happy" />
+              <p>Happy</p>
+            </div>
+
+            <div class="middle-side">
+              <img id="sad_emoji" src="./Images/sad.png" alt="sad" />
+              <p>Sad</p>
+            </div>
+
+            <div class="right-side">
+              <img src="./Images/sadpic.png" alt="Pain" />
+              <p>Pain</p>
+            </div>
+          </div>
+
+          <div class="emotion-block">
+            <div class="left-side">
+              <img src="./Images/love.png" alt="Love" />
+              <p>Love</p>
+            </div>
+
+            <div class="middle-side">
+              <img src="./Images/lonely.png" alt="Lonely" />
+              <p>Loneliness</p>
+            </div>
+
+            <div class="right-side">
+              <img src="./Images/anger.png" alt="angry" />
+              <p>Anger</p>
+            </div>
+          </div>
+
+          <div class="space"></div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Enjoy The Music</h3>
+
+    <div class="functional-btn">
+      <i id="pause-btn" class="fa fa-pause-circle-o" aria-hidden="true"></i>
+      <i id="shuffle-btn" class="fa fa-repeat" aria-hidden="true"></i>
+    </div>
+
+    <!-- sad songs list -->
+
+    <audio id="GhawarBarri">
+      <source type="audio/mpeg" src="./Audio/Bangla/Sad/GhawarBarri.mp3" />
+    </audio>
+    <audio id="Kobita">
+      <source type="audio/mpeg" src="./Audio/Bangla/Sad/Kobita_Tumi.mp3" />
+    </audio>
+    <audio id="Nesha">
+      <source type="audio/mpeg" src="./Audio/Bangla/Sad/Nesha_bojha.mp3" />
+    </audio>
+    <audio id="Meghdol">
+      <source type="audio/mpeg" src="./Audio/Bangla/Sad/Meghdol.mp3" />
+    </audio>
+
+    <!-- sad songs chapter ends here -->
+
+    <script src="./JS/bengali.js"></script>
+  </body>
+</html>
