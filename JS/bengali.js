@@ -1,33 +1,9 @@
-function BackGroundChange()
+/* Generate a random function */
+function Random(len)
 {
-   
+    return Math.floor(Math.random()*len)
 
-       let selected_image = GIF_Array[Random(GIF_Array.length)];
-       document.body.style.backgroundImage = `url(${selected_image})`;
-    
 }
-
-
-
-    setInterval(()=>{
-
-        BackGroundChange();
-       
-    
-    },50000);
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* get the pause and shuffle initializer */
 
 let pause_btn = document.getElementById("pause-btn");
@@ -42,10 +18,10 @@ let count = 0;
 
 let GIF_Array = [
 
-    '../Images/2471364.gif',
-    '../Images/2471393.gif',
-    '../Images/785502.gif',
-    '../Images/849790.gif'
+    "./Images/2471393.gif",
+    "./Images/2471364.gif",
+    "./Images/785502.gif",
+    "./Images/849790.gif"
 ]
 
 /* get the sad songs initializer */
@@ -57,13 +33,22 @@ let song4 = document.getElementById("Nesha");
 let sad_song_array = [song1,song2,song3,song4];
 
 
-/* Generate a random function */
 
-function Random(len)
+
+
+function BackGroundChange()
 {
-    return Math.floor(Math.random()*len)
-
+       let selected_image = GIF_Array[Random(GIF_Array.length)];
+       document.body.style.backgroundImage = `url(${selected_image})`;
 }
+
+
+    setInterval(()=>{
+
+        BackGroundChange();
+       
+    
+    },40000);
 
 
 
