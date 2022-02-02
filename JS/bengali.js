@@ -57,19 +57,21 @@ let pain = [pain_s1 ,pain_s2,pain_s3,pain_s4];
 
 
 /* To get the Random Background in every 20 second period time */
-function BackGroundChange()
-{
-       let selected_image = GIF_Array[Random(GIF_Array.length)];
-       document.body.style.backgroundImage = `url(${selected_image})`;
-}
 
 
-    setInterval(()=>{
+// function BackGroundChange()
+// {
+//        let selected_image = GIF_Array[Random(GIF_Array.length)];
+//        document.body.style.backgroundImage = `url(${selected_image})`;
+// }
 
-        BackGroundChange();
+
+//     setInterval(()=>{
+
+//         BackGroundChange();
        
     
-    },40000);
+//     },40000);
 
 /*----------------------*/
 
