@@ -1,3 +1,33 @@
+function BackGroundChange()
+{
+   
+
+       let selected_image = GIF_Array[Random(GIF_Array.length)];
+       document.body.style.backgroundImage = `url(${selected_image})`;
+    
+}
+
+
+
+    setInterval(()=>{
+
+        BackGroundChange();
+       
+    
+    },50000);
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* get the pause and shuffle initializer */
 
 let pause_btn = document.getElementById("pause-btn");
@@ -6,6 +36,17 @@ let shuffle_btn = document.getElementById("shuffle-btn");
 let catch_song_no = 0;
 let song_name = 0;
 let count = 0;
+
+
+/* create a GIF array */
+
+let GIF_Array = [
+
+    '../Images/2471364.gif',
+    '../Images/2471393.gif',
+    '../Images/785502.gif',
+    '../Images/849790.gif'
+]
 
 /* get the sad songs initializer */
 let song1 = document.getElementById("GhawarBarri");
@@ -63,3 +104,6 @@ shuffle_btn.addEventListener("click",function(){
    song_name.play();
 
 })
+
+
+
